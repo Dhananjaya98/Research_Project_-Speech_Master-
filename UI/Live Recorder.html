@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Inner Page - OnePage Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!--CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!--Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <title>Media Recorder in Javascript</title>
+    <link rel="stylesheet" href="assets/css/liveRecorder.css" />
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+   <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <h1 class="logo"><a href="index.html">SPEECH MASTER</a></h1>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto " href="Live Recorder.html">Record Live</a></li>
+                    <li><a class="nav-link scrollto" href="reportFinal.html">Score</a></li>
+                    <li><a class="nav-link scrollto" href="#">Feedbacks</a></li>
+                    <li><a class="nav-link scrollto" href="#">Contribute</a></li>
+
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+
+                </ul>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+
+    <main id="main">
+        <br><br><br><br>
+
+        <div id="container">
+            <h1 style="text-align:center"><b>Record your speech here!...</b></h1>
+            <br><br>
+
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <video id="gum" playsinline autoplay muted></video>
+                </div>
+                <div class="col">
+                    <video id="recorded" playsinline loop></video>
+                </div>
+                <div class="col"></div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col d-flex justify-content-center">
+                    <button id="start" class="btn btn-primary btn-lg">Start camera&ensp;<h5 class="fa fa-camera"></h5>
+                    </button>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <button id="record" class="btn btn-danger btn-lg" disabled>Record</button>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <button id="play" class="btn btn-success btn-lg" disabled>Play&ensp;<h5 class="fa fa-play"></h5>
+                    </button>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <button id="download" class="btn btn-dark btn-lg" disabled>Download&ensp;<h5 class="fa fa-download">
+                        </h5></button>
+                </div>
+                <div class="col"></div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col"></div>
+                <div class="col d-flex justify-content-center">
+                    <div>
+                        <!-- <h4>Media Stream Constraints options</h4>-->
+                        <h6><b>
+                                Echo cancellation: <input type="checkbox" id="echoCancellation" />
+                            </b></h6>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+            <br>
+            <div>
+                <span id="errorMsg"></span>
+            </div>
+        </div>
+
+    </main><!-- End #main -->
+
+
+ <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>SPEECH MASTER</h3>
+                        <p>
+                            SLIIT Mabalbe<br />
+                            <br /><br />
+                            <strong>Phone:</strong> +94 11 55488 55<br />
+                            <strong>Email:</strong> Speechmaster@info.com<br />
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li>
+                                <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                            </li>
+                            <li>
+                                <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <i class="bx bx-chevron-right"></i>
+                                <a href="#">Terms of service</a>
+                            </li>
+                            <li>
+                                <i class="bx bx-chevron-right"></i>
+                                <a href="#">Privacy policy</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li>
+                                <i class="bx bx-chevron-right"></i> <a href="#">Content Analyzing</a>
+                            </li>
+                            <li>
+                                <i class="bx bx-chevron-right"></i>
+                                <a href="#">Facial Expressions Analyzing</a>
+                            </li>
+                            <li>
+                                <i class="bx bx-chevron-right"></i>
+                                <a href="#">Grammer Checking</a>
+                            </li>
+                            <li>
+                                <i class="bx bx-chevron-right"></i> <a href="#">Filler Words Tracking</a>
+                            </li>
+                            <li>
+                                <i class="bx bx-chevron-right"></i>
+                                <a href="#">Customized Report</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Join Our Community</h4>
+                        <form action="" method="post">
+                            <input type="email" name="email" /><input type="submit" value="Subscribe" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-md-flex py-4">
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>SPEECH MASTER</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="https://www.sliit.lk/">SLIIT 2017 Batch</a>
+                </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/liveRecorder.js"></script>
+
+</body>
+
+</html>
